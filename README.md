@@ -3,7 +3,8 @@
 </p>
 
 <p align="center">
-  <strong>MSc in Computational Science · BSc in Physics</strong>
+  <strong>MSc in Computational Science</strong> — Universität Regensburg<br>
+  <strong>BSc in Physics</strong> — Universidad de los Andes
 </p>
 
 <p align="center">
