@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/profile-banner.svg" alt="Juan Osorio Vargas — Reliable data. Useful AI. Data Engineering, Analytics Engineering, and AI Engineering." width="100%">
+  <img src="assets/profile-banner.svg" alt="Juan Osorio Vargas — Data Platforms, Analytics &amp; Applied AI. Data Engineering, Analytics Engineering, and AI Engineering." width="100%">
 </p>
 
 <p align="center">
