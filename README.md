@@ -60,7 +60,7 @@ A dbt project that turns public NYC yellow-taxi data into dashboard-ready views 
 
 ### [AI & Data Systems Lab](https://github.com/josoriov/ai-data-systems-lab)
 
-**Analytics Engineering · AI Engineering · Consumer lending** · Private source repository
+**Analytics Engineering · AI Engineering · Consumer lending**
 
 Two complementary local prototypes for a fictional lending company, using synthetic data and example policies.
 
@@ -77,6 +77,8 @@ Two complementary local prototypes for a fictional lending company, using synthe
 - Inspectable output for **340 sample messages** and offline tests for routing boundaries.
 
 **Stack:** Python · SQL · dbt · DuckDB · OpenAI SDK · Pydantic
+
+[Explore the code](https://github.com/josoriov/ai-data-systems-lab) · [Architecture and setup](https://github.com/josoriov/ai-data-systems-lab/blob/main/README.md)
 
 ## Toolkit
 
