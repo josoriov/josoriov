@@ -27,6 +27,42 @@ I connect reliable pipelines to business metrics and useful AI workflows. My por
 
 ## Selected projects
 
+### [AI & Data Systems Lab](https://github.com/josoriov/ai-data-systems-lab)
+
+**Analytics Engineering · AI Engineering · Consumer lending**
+
+Two complementary local prototypes for a fictional lending company, using synthetic data and example policies.
+
+**Lending analytics warehouse**
+
+- **Bronze → Silver → Gold** warehouse with Python, SQL, dbt, and DuckDB.
+- CDC normalization, identity resolution, payment reversals, SCD2 merchant history, and FIFO allocation.
+- Merchant performance and delinquency metrics, validated with **49 dbt tests**.
+
+**AI customer-message triage**
+
+- Spanish message classification and entity extraction through structured outputs and Pydantic.
+- Deterministic human routing and replies grounded in reviewed policy templates.
+- Inspectable output for **340 sample messages** and offline tests for routing boundaries.
+
+**Stack:** Python · SQL · dbt · DuckDB · OpenAI SDK · Pydantic
+
+[Explore the code](https://github.com/josoriov/ai-data-systems-lab) · [Architecture and setup](https://github.com/josoriov/ai-data-systems-lab/blob/main/README.md)
+
+### [Marketplace Analytics](https://github.com/josoriov/marketplace-analytics)
+
+**Analytics Engineering · dbt · PostgreSQL · FastAPI**
+
+A local analytics project that turns the Olist Brazilian e-commerce dataset into a PostgreSQL warehouse and an API for seller, category, and regional sales metrics.
+
+- **Ingestion to business metrics:** Python and Polars validate nine CSVs; dbt builds raw, silver, and analytics layers with explicit revenue and delivery rules.
+- **Data quality:** 45 dbt tests and 42 Python tests cover model grains, revenue reconciliation, API contracts, and PostgreSQL metric regression; GitHub Actions runs lint and regression checks.
+- **Inspectable results:** documented sales, seller concentration, and delivery findings, with model lineage, an interactive architecture diagram, and a reproducible container setup.
+
+**Stack:** Python · SQL · Polars · PostgreSQL · dbt · FastAPI · uv · Docker/Podman · GitHub Actions
+
+[Explore the code](https://github.com/josoriov/marketplace-analytics) · [Analytics and example results](https://github.com/josoriov/marketplace-analytics/blob/main/docs/analytics.md) · [Architecture and setup](https://github.com/josoriov/marketplace-analytics/blob/main/README.md#architecture)
+
 ### [Weather Pipeline](https://github.com/josoriov/weather-pipeline)
 
 **Data Engineering · AWS · Infrastructure as code**
@@ -57,42 +93,6 @@ A dbt project that turns public NYC yellow-taxi data into dashboard-ready views 
 **Stack:** SQL · dbt · BigQuery · GCP · Terraform · GitHub Actions
 
 [Explore the models](https://github.com/josoriov/nyc-tlc-trips) · [Deployment workflow](https://github.com/josoriov/nyc-tlc-trips/blob/main/.github/workflows/deploy.yml)
-
-### [Marketplace Analytics](https://github.com/josoriov/marketplace-analytics)
-
-**Analytics Engineering · dbt · PostgreSQL · FastAPI**
-
-A local analytics project that turns the Olist Brazilian e-commerce dataset into a PostgreSQL warehouse and an API for seller, category, and regional sales metrics.
-
-- **Ingestion to business metrics:** Python and Polars validate nine CSVs; dbt builds raw, silver, and analytics layers with explicit revenue and delivery rules.
-- **Data quality:** 45 dbt tests and 42 Python tests cover model grains, revenue reconciliation, API contracts, and PostgreSQL metric regression; GitHub Actions runs lint and regression checks.
-- **Inspectable results:** documented sales, seller concentration, and delivery findings, with model lineage, an interactive architecture diagram, and a reproducible container setup.
-
-**Stack:** Python · SQL · Polars · PostgreSQL · dbt · FastAPI · uv · Docker/Podman · GitHub Actions
-
-[Explore the code](https://github.com/josoriov/marketplace-analytics) · [Analytics and example results](https://github.com/josoriov/marketplace-analytics/blob/main/docs/analytics.md) · [Architecture and setup](https://github.com/josoriov/marketplace-analytics/blob/main/README.md#architecture)
-
-### [AI & Data Systems Lab](https://github.com/josoriov/ai-data-systems-lab)
-
-**Analytics Engineering · AI Engineering · Consumer lending**
-
-Two complementary local prototypes for a fictional lending company, using synthetic data and example policies.
-
-**Lending analytics warehouse**
-
-- **Bronze → Silver → Gold** warehouse with Python, SQL, dbt, and DuckDB.
-- CDC normalization, identity resolution, payment reversals, SCD2 merchant history, and FIFO allocation.
-- Merchant performance and delinquency metrics, validated with **49 dbt tests**.
-
-**AI customer-message triage**
-
-- Spanish message classification and entity extraction through structured outputs and Pydantic.
-- Deterministic human routing and replies grounded in reviewed policy templates.
-- Inspectable output for **340 sample messages** and offline tests for routing boundaries.
-
-**Stack:** Python · SQL · dbt · DuckDB · OpenAI SDK · Pydantic
-
-[Explore the code](https://github.com/josoriov/ai-data-systems-lab) · [Architecture and setup](https://github.com/josoriov/ai-data-systems-lab/blob/main/README.md)
 
 ## Toolkit
 
