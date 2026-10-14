@@ -27,6 +27,20 @@ I connect reliable pipelines to business metrics and useful AI workflows. My por
 
 ## Selected projects
 
+### [SEC Research Assistant](https://github.com/josoriov/sec-research-assistant)
+
+**Data Engineering · Analytics Engineering · AI Engineering · Financial research**
+
+A local research prototype that combines financial calculations with cited evidence from SEC annual filings for Apple, Microsoft, Google, Amazon, and Meta.
+
+- **Ingestion to research data:** Python, Airflow, and dbt build Bronze → Silver → Gold datasets with source lineage, quality checks, and atomic publication.
+- **Calculations and cited evidence:** FastAPI returns revenue, net income, and operating cash flow comparisons alongside filing passages retrieved through pgvector; an optional LLM composes cited explanations.
+- **Inspectable results:** a recorded 25-question evaluation, a saved API response, and an interactive architecture diagram document behavior and limitations.
+
+**Stack:** Python · SQL · Airflow · dbt · PostgreSQL · pgvector · MinIO · FastAPI · Docker/Podman · GitHub Actions
+
+[Explore the code](https://github.com/josoriov/sec-research-assistant) · [Evaluation and example results](https://github.com/josoriov/sec-research-assistant/blob/main/docs/evaluation-report.md) · [Architecture and setup](https://github.com/josoriov/sec-research-assistant/blob/main/README.md#architecture)
+
 ### [AI & Data Systems Lab](https://github.com/josoriov/ai-data-systems-lab)
 
 **Analytics Engineering · AI Engineering · Consumer lending**
