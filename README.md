@@ -31,15 +31,16 @@ I connect reliable pipelines to business metrics and useful AI workflows. My por
 
 **Data Engineering · Analytics Engineering · AI Engineering · Financial research**
 
-A local research prototype that combines financial calculations with cited evidence from SEC annual filings for Apple, Microsoft, Google, Amazon, and Meta.
+A local research prototype with a web interface that combines financial calculations with cited evidence from SEC annual filings for Apple, Microsoft, Google, Amazon, and Meta.
 
-- **Ingestion to research data:** Python, Airflow, and dbt build Bronze → Silver → Gold datasets with source lineage, quality checks, and atomic publication.
-- **Calculations and cited evidence:** FastAPI returns revenue, net income, and operating cash flow comparisons alongside filing passages retrieved through pgvector; an optional LLM composes cited explanations.
-- **Inspectable results:** a recorded 25-question evaluation, a saved API response, and an interactive architecture diagram document behavior and limitations.
+- **Data preparation:** Python, Airflow, and dbt turn archived SEC snapshots into Bronze → Silver → Gold datasets with source lineage, quality checks, and atomic gold publication.
+- **Research API:** FastAPI reads published gold to calculate revenue, net income, and operating cash flow comparisons through approved SQL tools, and retrieves filing passages with local embeddings and pgvector. Structured requests return calculations and evidence without an LLM.
+- **Natural-language interface:** an Astro UI lets users select a company and optional metric, then ask a question. A configured LLM interprets the metric and fiscal years and composes cited explanations; the UI displays citations, calculations, passages, limitations, and clarification requests.
+- **Inspectable results:** a recorded 25-question evaluation, a saved API response, end-to-end journey checks, and an interactive architecture diagram document behavior and limitations.
 
-**Stack:** Python · SQL · Airflow · dbt · PostgreSQL · pgvector · MinIO · FastAPI · Docker/Podman · GitHub Actions
+**Stack:** Python · SQL · TypeScript · Astro · FastAPI · Airflow · dbt · PostgreSQL · pgvector · MinIO · Docker/Podman · GitHub Actions
 
-[Explore the code](https://github.com/josoriov/sec-research-assistant) · [Evaluation and example results](https://github.com/josoriov/sec-research-assistant/blob/main/docs/evaluation-report.md) · [Architecture and setup](https://github.com/josoriov/sec-research-assistant/blob/main/README.md#architecture)
+[Explore the code](https://github.com/josoriov/sec-research-assistant) · [Evaluation and example results](https://github.com/josoriov/sec-research-assistant/blob/main/docs/evaluation-report.md) · [Architecture](https://github.com/josoriov/sec-research-assistant/blob/main/README.md#architecture) · [Run the app](https://github.com/josoriov/sec-research-assistant/blob/main/docs/run.md)
 
 ### [AI & Data Systems Lab](https://github.com/josoriov/ai-data-systems-lab)
 
